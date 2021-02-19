@@ -1,0 +1,376 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+.main{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+h1{
+    font-family:cursive;
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-left: 620px;
+    margin-top: 3px;
+    z-index: 999;
+    position: absolute;
+    font-style: normal;
+}
+.timer{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+#stopwatch{
+    z-index: 999;
+    position: absolute;
+    color: yellow;
+    /*background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(247,70,252,1) 57%);
+    */
+    background: black;
+    border: white 3px solid;
+    width: 210px;
+    height: 70px;
+    margin-top: 30px;
+    margin-left: 1280px;
+    border-radius: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+@font-face {
+    font-family: 'ds-digitalbold';
+    src: url('ds-digib-webfont.woff2') format('woff2'),
+         url('ds-digib-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+#settime{
+    margin-top: 10px;
+    
+}
+#min{
+    font-family: 'ds-digitalbold';
+    font-size: 50px;
+    font-weight: bold;
+    color: #66ff99;
+}
+#smin{
+    font-family: 'ds-digitalbold';
+    font-size: 50px;
+    font-weight: bold;
+    color: #66ff99;
+}
+#m{
+    color: #66ff99;
+}
+#displaytime2{
+    
+    font-family: 'ds-digitalbold';
+    font-size: 50px;
+    font-weight: bold;
+    color: #66ff99;
+}
+#sec{
+    font-family: 'ds-digitalbold';
+    font-size: 50px;
+    font-weight: bold;
+    color: #66ff99;
+}
+#msec{
+    font-family: 'ds-digitalbold';
+    font-size: 50px;
+    font-weight: bold;
+    color: #66ff99;
+}
+#s{
+    color: #66ff99;
+}
+
+#startmatch{
+    margin-top: 665px;
+    margin-left: 675px;
+    width: 200px;
+    height: 70px;
+    color: yellow;
+    background: linear-gradient(to left, #f00000, #dc281e);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: white 5px solid;
+    border-radius: 60px;
+}
+#startmatch:hover{
+    font-size: 30px;
+    cursor: grab;
+}
+#startmatch:focus{
+    outline: none;
+    cursor: grab;
+}
+#select{
+    width: 110px;
+    height: 110px;
+    border-radius: 360px;
+    position: absolute;
+    z-index: 999;
+    margin-top: 250px;
+    margin-left: 60px;
+    border: gold 5px solid;
+}
+#select:hover{
+    width:120px;
+    height:120px;
+    cursor: grab;
+}
+#select img{
+    width: 100px;
+    height: 100px;
+    margin-left: 0px;
+    margin-top: 0px;
+    border-radius: 360px;
+    position: relative;
+}
+#select:focus{
+    outline: none;
+    cursor: grab;
+}
+#bat{
+    width: 100px;
+    height: 70px;
+    border: white 5px solid;
+    background-color: red;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 390px;
+    margin-left: 65px;
+    position: absolute;
+    padding: 10px;
+    color: yellow;
+    border-radius: 30px;
+    text-align: center;
+}
+#bat:hover{
+    font-size: 150%;
+    cursor: grab;
+}
+#bat:focus{
+    outline: none;
+    cursor: grab;
+}
+#field{
+    width: 100px;
+    height: 70px;
+    border: white 5px solid;
+    background-color: red;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 490px;
+    margin-left: 65px;
+    position: absolute;
+    padding: 10px;
+    color: yellow;
+    border-radius: 30px;
+    text-align: center;
+}
+#field:hover{
+    font-size: 150%;
+    cursor: grab;
+}
+#field:focus{
+    outline: none;
+    cursor: grab;
+}
+.main #stadium{
+    height: 750px;
+    width: 1536px;
+    position: absolute;
+    background-size: cover;
+}
+.main #logo{
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    margin-left: 10px;
+    margin-top: -10px;
+    
+}
+#box1{
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 250px;
+    width: 500px;
+    height: 480px;
+    background-color: aliceblue;
+    opacity: 0.4;
+    border-radius: 100px;
+    
+}
+#box1:hover{
+    opacity: 1;
+    background-color:royalblue;
+}
+#box1 #rohit{
+    margin-left: 120px;
+    margin-top: -230px;
+    z-index: 2;
+}
+#box1 #milogo{
+    margin-left: 120px;
+    margin-top: -10px;
+    z-index: 1;
+}
+#box1 h1{
+    margin-top: 10px;
+    margin-left: 170px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-shadow: -4px 0 blue, 0 4px blue, 4px 0 blue, 0 -4px blue;
+
+}
+#box1 #runmi{
+    margin-top: 80px;
+    margin-left: 67px;
+    margin-right: 30px;
+}
+#runmi button{
+   background-color: white;
+   width: 70px;
+   height: 70px; 
+   border-radius: 20px;
+   border: white 2px solid;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 20px;
+   font-weight: bold;
+   color: royalblue;
+}
+#runmi button:hover{
+    background-color: royalblue;
+    color: white;
+    cursor: grab;
+}
+#runmi button:focus{
+    outline: none;
+    cursor: grab;
+}
+#deduct button{
+    margin-top: 20px;
+    margin-left: 165px;
+    border: white 2px solid;
+    border-radius: 20px;
+    width: 170px;
+    height: 30px;
+    background-color: white;
+    color: royalblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+#deduct button:hover{
+    background-color: royalblue;
+    color: white;
+    cursor: grab;
+}
+#deduct button:focus{
+    outline: none;
+    cursor: grab;
+}
+
+#box2{
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 800px;
+    width: 500px;
+    height: 480px;
+    background-color: aliceblue;
+    opacity: 0.4;
+    border-radius: 100px;
+    
+}
+#box2:hover{
+    opacity: 1;
+    background-color: yellow;
+}
+#box2 #dhoni{
+    margin-left: 120px;
+    margin-top: 20px;
+}
+#box2 h1{
+    margin-top: 10px;
+    margin-left: 170px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-shadow: -4px 0 darkorange, 0 4px darkorange, 4px 0 darkorange, 0 -4px darkorange;
+    
+
+}
+#box2 #runcsk{
+    margin-top: 75px;
+    margin-left: 67px;
+    margin-right: 30px;
+}
+#runcsk button{
+   background-color: white;
+   width: 70px;
+   height: 70px; 
+   border-radius: 20px;
+   border: white 2px solid;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 20px;
+   font-weight: bold;
+   color: darkorange;
+}
+#runcsk button:hover{
+    background-color: darkorange;
+    color: white;
+    cursor: grab;
+}
+#runcsk button:focus{
+    outline: none;
+    cursor: grab;
+}
+#deduct1 button{
+    margin-top: 20px;
+    margin-left: 165px;
+    border: white 2px solid;
+    border-radius: 20px;
+    width: 170px;
+    height: 30px;
+    background-color: white;
+    color: darkorange;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+#deduct1 button:hover{
+    background-color: darkorange;
+    color: white;
+    cursor: grab;
+}
+#deduct1 button:focus{
+    outline: none;
+    cursor: grab;
+}
