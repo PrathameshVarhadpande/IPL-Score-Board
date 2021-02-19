@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>Indian Premier League</title>
+    <link rel = "icon" href = "images/ipl_logo.png" type = "image/x-icon"> 
+    <link rel = "stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/stopwatch.js"></script>
+    <script type="text/javascript" src="js/counter.js"></script>
+</head>
+<body>
+    <!--<audio autoplay preload="auto">
+        <source src="audio/ipl.mp3" type="audio/mp3">
+    </audio>-->
+    <div class="main">
+        <img src="images/stadium.jpg" id="stadium">
+        <img src="images/ipl_logo.png" id="logo">
+        <h1>MI vs CSK</h1>
+        <div class="timer" id="stopwatch">
+            <div id="settime">
+                <span id="min">1</span>
+                <span id="smin">0</span>
+                <span id="m"> m </span>
+                <span id="displaytime2"> : </span>
+                <span id="sec">0</span>
+                <span id="msec">0</span>
+                <span id="s"> s </span>
+            </div>
+        </div>
+        <button id="startmatch" onclick="iplmusic();starttime()">Start Match</button>
+            <div id="box1">
+                <img src="images/milogo.png" id="milogo" style="width: 250px;height: 250px;">
+                <img src="images/rohitsharma.png" id="rohit" style="width: 250px;height: 250px;">
+                <h1 id="runsmi">Runs : <span id="runs">0</span></h1>
+                <div id="runmi">
+                    <button class="disable" id="mi" onclick="onerun(1)">1</button>
+                    <button class="disable" id="mi" onclick="tworun(1)">2</button>
+                    <button class="disable" id="mi" onclick="threerun(1)">3</button>
+                    <button class="disable" id="mi" onclick="fourrun(1)" >4</button>
+                    <button class="disable" id="mi" onclick="sixrun(1)">6</button>
+                </div> 
+                <div id="deduct">
+                    <button class="disable" id="deduct3" onclick="deduct(1)">Deduct Score</button>
+                </div>       
+            </div>
+            <div id="box2">
+                <img src="images/dhoni1.png" id="dhoni" style="width: 250px;height: 250px;">
+                <h1 id="runscsk">Runs : <span id="runs1">0</span></h1>
+                <div id="runcsk">
+                    <button class="disable" id="csk" onclick="onerun(2)">1</button>
+                    <button class="disable" id="csk" onclick="tworun(2)">2</button>
+                    <button class="disable" id="csk" onclick="threerun(2)">3</button>
+                    <button class="disable" id="csk" onclick="fourrun(2)">4</button>
+                    <button class="disable" id="csk" onclick="sixrun(2)">6</button>
+                </div> 
+                <div id="deduct1">
+                    <button class="disable" onclick="deduct(2)">Deduct Score</button>
+                </div>
+            </div>
+        <button onclick="toss()" id="select"><img src="images/Cointoss.gif" id="coin "></button>
+        <button onclick="bat()" id="bat">Bat</button>
+        <button onclick="field()" id="field">Field</button>
+    </div>
+    <script>
+        var disable_button = document.getElementsByClassName("disable");
+        disable_button[0].disabled=true;
+        disable_button[1].disabled=true;
+        disable_button[2].disabled=true;
+        disable_button[3].disabled=true;
+        disable_button[4].disabled=true;
+        disable_button[5].disabled=true;
+        disable_button[6].disabled=true;
+        disable_button[7].disabled=true;
+        disable_button[8].disabled=true;
+        disable_button[9].disabled=true;
+        disable_button[10].disabled=true;
+        disable_button[11].disabled=true;
+    </script>
+</body>
+</html>
