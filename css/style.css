@@ -9,11 +9,11 @@
 }
 h1{
     font-family:cursive;
-    font-size: 70px;
+    font-size: 45px;
     font-weight: bold;
     color: white;
     text-align: center;
-    margin-left: 620px;
+    margin-left: 720px;
     margin-top: 3px;
     z-index: 999;
     position: absolute;
