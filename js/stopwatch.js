@@ -4,7 +4,7 @@ var sec = 0;
 var msec = 0; 
 
 function iplmusic(){
-	var audio = new Audio("audio/ipl.mp3")
+	var audio = new Audio("audio/ipl_new.mp3")
   	audio.play();
 }
 function starttime(){
